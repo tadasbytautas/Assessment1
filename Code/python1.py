@@ -142,9 +142,13 @@ def three(arg1):
 
 def four(arg1):
     num = arg1
+    num = num.split(" ")
+    total = ""
+    for i in range(0, len(num)):
+        total = total + num[i]
 
+    return total
 
-    return 0
 
 
 # <QUESTION 5>
