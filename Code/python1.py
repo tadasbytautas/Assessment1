@@ -65,16 +65,24 @@ def one(input1, input2):
 # Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
 def two(input):
-    customString = input
-    count = 0
-    if str(customString).find("bert"):
-        customString = str(customString).replace("bert", "")
-        count += 1
-        return customString
 
-    if count >= 1:
+    customString = str(input).lower()
+    num = customString.count("bert")
+    if num == 2:
+        customString = str(customString).replace("bert", "")
+        return customString
+    else:
         customString = ""
         return customString
+
+    # if str(customString).find("bert"):
+    #     customString = str(customString).replace("bert", "")
+    #     count += 1
+    #     return customString
+    #
+    # if count >= 1:
+    #     customString = ""
+    #     return customString
 
 
     # <QUESTION 3>
@@ -131,6 +139,9 @@ def three(arg1):
 # help(int) for working with numbers and help(str) for working with Strings.
 
 def four(arg1):
+    num = arg1
+
+
     return 0
 
 
