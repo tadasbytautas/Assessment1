@@ -70,6 +70,8 @@ def two(input):
     num = customString.count("bert")
     if num == 2:
         customString = str(customString).replace("bert", "")
+        customString = str(customString).replace("xx", "")
+        customString = str(customString).replace("yy", "")
         return customString
     else:
         customString = ""
